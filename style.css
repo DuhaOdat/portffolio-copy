@@ -3,17 +3,18 @@
     font-family: sans-serif; 
      margin: 0; 
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+  
    
 }
-
-.navbar-brand {
+ 
+ .navbar-brand {
     margin-left: 12rem;
-}
+} 
 
-  .logoimg{
+ .logoimg{
     height: 70px;
-}
+} 
 
 
 .navbar-dark .navbar-nav .nav-link:hover{
@@ -138,7 +139,7 @@
     color:white
 }
 
-.about .content img{
+.about .content1 img{
     height: auto;
     width: 400px;
     max-width: 100%;
@@ -150,7 +151,7 @@
     padding: 0 10px;
 }
 
-.content{
+.content1{
     width:1280px;
     max-width: 95%;
     margin: 0 auto;
@@ -200,7 +201,7 @@
   }
   
 
- .content button{
+ .content1 button{
     background-color: #51829B;
     color: black;
     border: 2px solid transparent;
@@ -211,7 +212,7 @@
     font-weight: bold;
  }
 
- .content button:hover a{
+ .content1 button:hover a{
     transform: scale(1.2);
     background-color: transparent;
     border: 2px solid #51829B;
@@ -679,7 +680,6 @@
         height: 30px;
         color: white;
         text-align: center;
-     
         width: 100%;
     }
     .container{
@@ -700,7 +700,7 @@
       }
       .footer-col{
          width: 25%;
-         padding: 0 15px;
+      
       }
       .footer-col h4{
         font-size: 18px;
@@ -752,7 +752,13 @@
 
       @media screen and (max-width:426px) {
 
-       
+        
+ .navbar-brand {
+    margin-left: 1rem;
+} 
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+    width: 425px;
+}
         
         .about-section{
             height: auto;
@@ -760,7 +766,7 @@
         .about-section h2{
             font-size: 40px;
         }
-        .about .content img{
+        .about .content1 img{
             width: 325px;
         }
         .text{
@@ -771,7 +777,10 @@
             font-size: 20px;
             text-align: center;
         }
-
+     .social-links{
+        width: 300px;
+        padding: 0;
+     }
         .section-education{
             height: auto;
         }
@@ -779,8 +788,10 @@
             font-size: 40px;
         }
         .edu-container{
+            width:100%;
            flex-direction: column;
            padding: 30px; 
+         
         }
         .Experence-section{
             height: auto;
@@ -829,6 +840,7 @@
         .contact{
             padding: 48px 6px;
         }
+    
         .container{
             flex-direction: column;
         }
@@ -856,15 +868,19 @@
         .container .contactInfo .Info-box .text{
             text-align: center;
         }
+        .text{
+            width: 100%;
+        }
 
         .textp{
             width: 350px;
             text-align: center;
         }
-        .footer1{
-            padding: 70px 98px;
-            margin-left: 16px;
-        }
+         .footer1{
+         
+             padding: 70px 0;
+         
+        }  
         .footer-col{
             width: 100%;}
 
@@ -885,10 +901,19 @@
         .banner{
             flex-direction: column;
         }
-        .navbar>.container-fluid{
+        .container-fluid {
+            justify-content: flex-start !important;
+          
+        }
+     
+       
+        .row{
+           margin: 0;
+        }
+        /* .navbar>.container-fluid{
             flex-direction: column;
            text-align: left;
            align-items: flex-start;
         }
-            
+             */
      }
